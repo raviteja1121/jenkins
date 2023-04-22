@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('checkgit branch') {
+    stage('checgit branch') {
       steps {
         script {
           def scmVars
