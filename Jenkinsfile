@@ -7,7 +7,7 @@ pipeline {
           def scmVars
           scmVars = checkout scm
           echo scmVars.GIT_BRANCH
-          def commit = sh(returnStdout: true, script: 'git log -1 --oneline | grep -i '^#*$ '').trim()
+          def commit = sh(returnStdout: true, script: 'git log -1 --oneline | grep -i '^\#*$ '').trim()
           echo "$commit"
         }
       }
