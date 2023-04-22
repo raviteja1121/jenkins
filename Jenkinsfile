@@ -7,7 +7,7 @@ pipeline {
           def scmVars
           scmVars = checkout scm
           echo scmVars.GIT_BRANCH
-          sh 'git log -1 oneline'
+          sh 'git log -1 --oneline'
         }
       }
     }
